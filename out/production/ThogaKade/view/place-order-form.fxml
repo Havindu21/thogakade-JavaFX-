@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="697.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderFormController">
+   <children>
+      <TextField alignment="CENTER" layoutX="-7.0" layoutY="-116.0" prefHeight="90.0" prefWidth="1000.0" style="-fx-background-color: #40739e;" text="Place Order Form">
+         <font>
+            <Font name="Baskerville Old Face" size="48.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cmbCustomerId" layoutX="46.0" layoutY="212.0" onAction="#cmbCustomerIdOnAction" prefWidth="150.0" promptText="Customer ID" />
+      <ComboBox fx:id="cmbItemCode" layoutX="46.0" layoutY="288.0" onAction="#cmbItemCodeOnAction" prefWidth="150.0" promptText="Item Code" />
+      <TextField fx:id="txtCustomerName" layoutX="216.0" layoutY="212.0" promptText="Name" />
+      <TextField layoutX="652.0" layoutY="288.0" prefHeight="31.0" prefWidth="125.0" promptText="I QTY" />
+      <TextField fx:id="txtPrice" layoutX="419.0" layoutY="288.0" promptText="Unit Price" />
+      <TextField fx:id="txtDesc" layoutX="216.0" layoutY="288.0" promptText="Description" />
+      <TextField fx:id="txtCustomerAddress" depthTest="ENABLE" editable="false" layoutX="419.0" layoutY="212.0" promptText="Address" />
+      <TextField fx:id="txtQtyOnHand" layoutX="809.0" layoutY="288.0" prefHeight="31.0" prefWidth="125.0" promptText="QTY On Hand" />
+      <Separator layoutX="791.0" layoutY="253.0" orientation="VERTICAL" prefHeight="90.0" prefWidth="6.0" />
+      <Label layoutX="54.0" layoutY="123.0" prefHeight="48.0" prefWidth="213.0" text="Order ID : D001">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="699.0" layoutY="123.0" prefHeight="48.0" prefWidth="74.0" text="Date : ">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView layoutX="21.0" layoutY="358.0" prefHeight="272.0" prefWidth="960.0">
+        <columns>
+          <TableColumn prefWidth="219.0" text="C1" />
+          <TableColumn prefWidth="264.0" text="C2" />
+            <TableColumn prefWidth="234.0" text="C2" />
+            <TableColumn prefWidth="242.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="843.0" layoutY="643.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="138.0" text="PLACE ORDER" />
+      <Button layoutX="684.0" layoutY="643.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="138.0" text="COMMIT" />
+      <Label fx:id="lblDate" layoutX="765.0" layoutY="132.0" prefHeight="19.0" prefWidth="158.0" text="DD/MM/YYYY">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-6.0" layoutY="-2.0" prefHeight="110.0" prefWidth="1000.0" style="-fx-background-color: #40739e;" text="Place Order Form" textAlignment="CENTER">
+         <font>
+            <Font name="Baskerville Old Face" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerSalary" layoutX="621.0" layoutY="212.0" promptText="Salary" />
+   </children>
+</AnchorPane>
